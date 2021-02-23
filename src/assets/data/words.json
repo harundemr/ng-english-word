@@ -1,0 +1,114 @@
+{
+  "words": [
+    {
+      "id": 1,
+      "english": "book",
+      "turkish": "kitap"
+    },
+    {
+      "id": 2,
+      "english": "Withdraw",
+      "turkish": "Geri Çekilme"
+    },
+    {
+      "id": 3,
+      "english": "Evolution ",
+      "turkish": "Evrim"
+    },
+    {
+      "id": 4,
+      "english": "Responsable",
+      "turkish": "Sorumluluk Sahibi"
+    },
+    {
+      "id": 5,
+      "english": "Accountable",
+      "turkish": "Sorumlu"
+    },
+    {
+      "english": "telephone",
+      "turkish": "telefon",
+      "id": 6
+    },
+    {
+      "english": "ff",
+      "turkish": "fffff",
+      "id": 7
+    },
+    {
+      "english": "fadfas",
+      "turkish": "asdfasfasd",
+      "id": 8
+    },
+    {
+      "english": "asdfasdf",
+      "turkish": "asdfasdf",
+      "id": 9
+    },
+    {
+      "english": "1232",
+      "turkish": "1232",
+      "id": 10
+    },
+    {
+      "english": "f",
+      "turkish": "f",
+      "id": 11
+    },
+    {
+      "english": "asdf",
+      "turkish": "asdfasdf",
+      "id": 12
+    },
+    {
+      "english": "121",
+      "turkish": "121",
+      "id": 13
+    },
+    {
+      "english": "fff",
+      "turkish": "fffff",
+      "id": 14
+    },
+    {
+      "english": "123",
+      "turkish": "123",
+      "id": 15
+    },
+    {
+      "english": "asdf",
+      "turkish": "asdf",
+      "id": 16
+    },
+    {
+      "english": "12321312312",
+      "turkish": "1231231232132",
+      "id": 17
+    },
+    {
+      "english": "12312321",
+      "turkish": "123",
+      "id": 18
+    },
+    {
+      "english": "hh",
+      "turkish": "hhh",
+      "id": 19
+    },
+    {
+      "english": null,
+      "turkish": null,
+      "id": 20
+    },
+    {
+      "english": "77",
+      "turkish": "77",
+      "id": 21
+    },
+    {
+      "english": "123",
+      "turkish": "123",
+      "id": 22
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+<div class="row">
+  <div class="col-md-4">
+    <div class="hd-form-container">
+      <h1>Kelime Sorusu</h1>
+      <p>Bu form üzerinden kelime çalışması yapabilirsin.</p>
+      <div class="hd-form-container-in">
+        <form [formGroup]="soruForm" (ngSubmit)="onSubmitSoru()">
+          <div class="hd-input-text-container">
+            <input
+              class="hd-input-text"
+              type="text"
+              formControlName="english"
+            />
+            <div class="hd-input-text-placeholder">English</div>
+          </div>
+          <br />
+
+          <div class="hd-input-text-container">
+            <input
+              class="hd-input-text"
+              type="text"
+              formControlName="turkish"
+            />
+            <div class="hd-input-text-placeholder">Turkish</div>
+          </div>
+          <br />
+
+          <div class="hd-button-container" style="float: right">
+            <button type="submit" class="hd-button-colored">Tamam</button>
+          </div>
+          <br />
+        </form>
+      </div>
+    </div>
+    <br />
+
+    <div class="hd-form-container">
+      <h1>Kelime Ekleme</h1>
+      <p>Bu form üzerinden programa kelime eklemesi yapabilirsiniz.</p>
+      <div class="hd-form-container-in">
+        <form [formGroup]="ekleForm" (ngSubmit)="onSubmitEkle()">
+          <div class="hd-input-text-container">
+            <input
+              class="hd-input-text"
+              type="text"
+              formControlName="english"
+            />
+            <div class="hd-input-text-placeholder">English</div>
+          </div>
+          <br />
+
+          <div class="hd-input-text-container">
+            <input
+              class="hd-input-text"
+              type="text"
+              formControlName="turkish"
+            />
+            <div class="hd-input-text-placeholder">Turkish</div>
+          </div>
+          <br />
+
+          <div class="hd-button-container" style="float: right">
+            <button
+              type="button"
+              class="hd-button-colorless"
+              (click)="onClear()"
+            >
+              Temizle
+            </button>
+            <button 
+              type="submit"
+              class="hd-button-colored"
+            >
+              Kaydet
+          </button>
+          </div>
+          <br />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="hd-form-container">
+      <h1>Kelime Listesi</h1>
+      <p>Bu listede sistemdeki tüm kelimeler yer almaktadır.</p>
+      <div class="hd-form-container-in">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">English</th>
+              <th scope="col">Turkish</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let word of words">
+              <th scope="row">{{ word.english }}</th>
+              <td>{{ word.turkish }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="hd-form-container">
+      <h1>Kelime Listesi</h1>
+      <p>Bu listede sistemdeki tüm kelimeler yer almaktadır.</p>
+      <div class="hd-form-container-in">
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </p>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <button class="hd-button" onclick='hdConfirm(null, null,function(){hdAlertSuccess("Awesome!", "")})'> Delete </button>
+      <button class="hd-button" onclick='hdAlertInfo()'> İnfo </button>
+      <button class="hd-button" onclick='hdAlertWarning()'> Warning </button>
+      <button class="hd-button" onclick='hdAlertError()'> Error </button>
+      <button class="hd-button" onclick='hdAlertSuccess()'> Success </button> -->

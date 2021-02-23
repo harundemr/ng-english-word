@@ -61,7 +61,7 @@ function hdTextFocusOut(e){
     }
     placeholder.style.color = "#80868b";
 
-    input.focusout();
+    //input.focusout();
 }
 
 function hdTextAreaFocusIn(e){
@@ -89,7 +89,7 @@ function hdTextAreaFocusOut(e){
     }
     placeholder.style.color = "#80868b";
 
-    input.focusout();
+    //input.focusout();
 }
 
 function hdSelectInit(){
