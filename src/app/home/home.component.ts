@@ -24,10 +24,15 @@ export class HomeComponent implements OnInit {
   });
 
   words: any[] = [];
-
+  count: number = 0;
+  currentPage: number = 1;
   ngOnInit() {
-    this.service.Get().subscribe((data) => {
+    this.service.Get(0,10).subscribe((data) => {
       this.words = data;
+    });
+
+    this.service.GetCount().subscribe((data) => {
+      this.count = data;
     });
 
     hdInit();
@@ -37,16 +42,25 @@ export class HomeComponent implements OnInit {
     alert('test1');
   }
 
+  getPage(skip:number, take:number|any, event?:number){
+    this.currentPage = event ? event: 1;
+    this.service.Get(skip, take).subscribe((data) => {
+      this.words = data;
+    });
+  }
+
   onSubmitEkle() {
     this.service
       .Push({
         english: this.ekleForm.controls['english'].value,
         turkish: this.ekleForm.controls['turkish'].value,
       })
-      .subscribe((data) => {
-       // hdAlertSuccess();
-       // test commit
+      .subscribe(() => {
         this.onClear();
+        document.getElementById('frmEkleEnglish')!.click();
+        this.service.Get(0,10).subscribe((data) => {
+          this.words = data;
+        });
       });
   }
 
