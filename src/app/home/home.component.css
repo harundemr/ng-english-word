@@ -1,3 +1,16 @@
 .row{
     margin: 0px;
 }
+.block{
+    margin-bottom:30px;
+}
+.ngx-pagination{
+    margin:0px;
+    padding: 0px;
+    padding-inline-start: 0px;
+}
+ul{
+        margin:0px;
+    padding: 0px;
+    padding-inline-start: 0px;
+}
