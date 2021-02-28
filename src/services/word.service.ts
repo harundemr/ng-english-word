@@ -17,6 +17,14 @@ export class WordService {
     return this.http.get<any>(this.path + "Get/" + skip + "/" + take).pipe(catchError(this.handleError));
   }
 
+  GetRandomWord(): Observable<any> {
+    return this.http.get<any>(this.path + "GetRandomWord").pipe(catchError(this.handleError));
+  }
+
+  Control(object: any): Observable<any> {
+    return this.http.post<any>(this.path + "Control",object).pipe(catchError(this.handleError));
+  }
+
   Push(object: any) {
     return this.http.post<any>(this.path + "Add", object).pipe(catchError(this.handleError));
   }
